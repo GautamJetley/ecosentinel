@@ -9,10 +9,6 @@ Upload BEFORE & AFTER satellite images to:
 
 ## Run (Docker)
 ```bash
-docker build -t ecosentinel .
-docker run -p 8530:8501 \
-  -e GROQ_API_KEY=$GROQ_API_KEY \
-  -e CEREBRAS_API_KEY=$CEREBRAS_API_KEY \
-  ecosentinel
-# open http://localhost:8530
+<img width="1124" height="445" alt="image" src="https://github.com/user-attachments/assets/8bb45831-00be-4aaa-bfc6-962eb361d15d" />
+
 
