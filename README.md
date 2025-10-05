@@ -13,7 +13,7 @@ docker build -t ecosentinel .
 docker run -d --name ecosentinel_run -p 8530:8501 --env-file .env ecosentinel
 Open: http://localhost:8530
 
-Use
+3) How to Use it :
 
 Turn OFF “Use built-in demo pair”.
 
@@ -21,14 +21,16 @@ Upload BEFORE and AFTER images of the same area (similar scale).
 
 Click “Generate AI Environmental Report” to get the summary and recommendations.
 
-Stack
+4) Stack :
 
 Streamlit (UI) · OpenCV + SSIM (change detection) · Meta Llama 3.1 via Cerebras (report) · Docker (packaging)
 
-Troubleshooting
+5) Troubleshooting :
 
 401 Unauthorized when generating report: check/refresh CEREBRAS_API_KEY and ensure .env is loaded.
 
 Port already in use: change mapping, e.g. -p 8531:8501 and open http://localhost:8531.
 
 Model not found (404): use llama3.1-8b (default).
+
+
